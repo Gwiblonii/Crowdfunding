@@ -1,0 +1,27 @@
+# Archivos y carpetas de Python
+__pycache__/
+*.py[cod]
+*.swp
+
+# Archivos sensibles
+.env
+
+# Brownie
+build/
+.cache/
+
+# Carpeta de pruebas automatizadas
+.pytest_cache/
+.hypothesis/
+
+# Historial de terminal o plugins
+.history
+
+# Reportes
+reports/
+
+# VSCode u otros editores (opcional)
+.vscode/
+
+# Archivos del sistema operativo
+.DS_Store
