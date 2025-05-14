@@ -48,12 +48,31 @@ Crowdfunding/
 
 ## 💡 Key Features
 
-- ✅ Fund campaigns with ETH
-- ✅ Convert ETH to USD using Chainlink oracles
-- ✅ Campaign deadline enforced
-- ✅ Manual refund requests if the funding goal is not reached
-- ✅ Owner withdrawal if goal is met
-- ✅ Contract verification on Etherscan
+-  Fund campaigns with ETH
+-  Convert ETH to USD using Chainlink oracles
+-  Campaign deadline enforced
+-  Manual refund requests if the funding goal is not reached
+-  Owner withdrawal if goal is met
+-  Contract verification on Etherscan
+
+ ## 🧪 Included Tests
+-  Funding test  
+-  Successful refund if goal is not met  
+-  Refund denied if user has not contributed  
+
+Tests are located in `tests/test_crowdfunding.py`
+
+## 🔐 Security
+Require statement checks for:  
+- Goal met before allowing withdrawal  
+- Campaign ended before allowing refund  
+- Owner verification before permitting withdrawals  
+- Use of local mocks for unit testing without internet connection
+
+## ✅ Project Status
+- 🟢 Completed and fully functional  
+- ✔️ Deployed and tested on local network and Sepolia
+
 
 📄 License
 This project is licensed under the MIT License. Feel free to use, modify, and share.
